@@ -19,11 +19,9 @@ from rest_framework.permissions import (
 from rest_framework.response import Response
 from rest_framework.decorators import action
 from rest_framework_simplejwt import tokens
-
 from django_filters.rest_framework import DjangoFilterBackend
 
 from .filters import TitleFilter
-
 from reviews.models import (
     Genre,
     Category,
@@ -31,13 +29,11 @@ from reviews.models import (
     User,
     Review,
 )
-
 from .permissions import (
     IsAuthorOrStaffOrReadOnly,
     IsAdmin,
     IsAdminOrReadOnly,
 )
-
 from .serializers import (
     GenreSerializer,
     CategorySerializer,
